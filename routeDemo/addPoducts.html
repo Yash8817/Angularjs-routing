@@ -1,0 +1,47 @@
+<div ng-controller="brands">
+    <form>
+        <table>
+            <tr>
+                <td>Select Brands Hi</td>
+                <td>
+
+
+                    <select name="brand" id="brand" ng-model="brandID">
+                        <option ng-repeat="brand in brands" value={{brand.brand_id}}>{{brand.brand_name}}
+                        </option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td><input type="text" name="product_name" ng-model="product_name" ng-model="product_name"></td>
+            </tr>
+
+            <tr>
+                <td>Model number</td>
+                <td><input type="text" name="model_number" ng-model="model_number"></td>
+            </tr>
+
+            <tr>
+                <td>Product Desctiption</td>
+                <td>
+                    <textarea name="product_desc" cols="10" rows="3" ng-model="desc"></textarea>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Price</td>
+                <td><input type="number" name="model_number" ng-model="price"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Add Product" ng-click="AddProduct()">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</div>

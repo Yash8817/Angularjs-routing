@@ -1,0 +1,10 @@
+<table>
+    <tr ng-repeat="product in products">
+      <td width=5%><a href="#!/products/{{product.product_id}}">Get details</a></td>
+      <td width=5%>{{product.product_id}}</td>
+      <td width=70%>{{product.display_name}}</td>
+      <td width=5%>{{product.price}}</td>
+      <td width=5%>{{product.brand_id}}</td>
+      <td width=15%>{{promo}}</td>
+    </tr>
+</table>
